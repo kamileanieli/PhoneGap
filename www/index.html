@@ -31,7 +31,24 @@
             <h1>HELLO WORLD!</h1>
             <p>Meu primeiro aplicativo utilizando o PhoneGap :D</p>
             <img src="img/EATI_LOGO.jpg">
+       
+        <fieldset>
+            <legend>Multiplicando ...</legend>
+            <label>Valor 1:</label>
+            <input id="txt1" type="text"/>
+            <label>Valor 2: </label>
+            <input id="txt2" type="text"/>
+            <button id="somar" onclick="somarValores()">Somar</button>
+        </fieldset>
         </div>
+        <script type="text/javascript">
+            function somarValores(){
+                var s1 = document.getElementById("txt1").value;
+                var s2 = document.getElementById("txt2").value;
+                var s3 = s1*s2;
+                alert(s3);
+            }
+        </script>
 
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
